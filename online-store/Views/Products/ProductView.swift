@@ -11,10 +11,6 @@ struct ProductView: View {
     @ObservedObject var storeViewModel: StoreViewModel
     var product: Product
     
-    func addItem() {
-        
-    }
-    
     var body: some View {
         ScrollView {
             VStack {

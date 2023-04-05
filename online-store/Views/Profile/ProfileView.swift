@@ -94,7 +94,7 @@ struct ProfileView: View {
                             Text("Password: ")
                                 .foregroundColor(.gray)
                             if (showPassword) {
-                                Text(storeVievModel.user.email ?? "")
+                                Text(storeVievModel.user.password ?? "")
                             }
                             
                             else {
@@ -107,7 +107,7 @@ struct ProfileView: View {
                             Button(action: {
                                 showPassword.toggle()
                             }) {
-                                Image(systemName: showPassword ? "eye.slash" : "eye")
+                                Image(systemName: showPassword ? "eye" : "eye.slash")
                                     .accentColor(.gray)
                             }
                         }

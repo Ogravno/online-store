@@ -13,6 +13,8 @@ struct LoginView: View {
     @State var username: String = "" // atuny0
     @State var password: String = "" // 9uQFF1Lh
     
+    @State var showPassword: Bool = false
+    
     
     var body: some View {
         VStack {
@@ -20,7 +22,24 @@ struct LoginView: View {
                 Form {
                     Section {
                         TextField("username", text: $username)
-                        SecureField("password", text: $password)
+                        
+                        HStack {
+                            if (showPassword) {
+                                TextField("password", text: $password)
+                            }
+                            else {
+                                SecureField("password", text: $password)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                showPassword.toggle()
+                            }) {
+                                Image(systemName: showPassword ? "eye" : "eye.slash")
+                                    .accentColor(.gray)
+                            }
+                        }
                     }
                     
                     Section {

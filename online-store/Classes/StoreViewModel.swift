@@ -58,7 +58,6 @@ class StoreViewModel: ObservableObject {
     func setUserDetails() async {
         do {
             let url: String = "https://dummyjson.com/users/" + String(user.id ?? 0)
-            print(url)
             
             user = try await getUserDetails(urlString: url)
             
