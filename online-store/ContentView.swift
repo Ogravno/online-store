@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var storeViewModel: StoreViewModel = StoreViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if (storeViewModel.token == "") {
+            LoginView(storeViewModel: storeViewModel)
         }
-        .padding()
+        
+        else {
+            TabView {
+                ProductsView(storeViewModel: storeViewModel)
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
+                
+                CartView(storeViewModel: storeViewModel)
+                    .tabItem {
+                        Image(systemName: "cart.fill")
+                        Text("Cart")
+                    }
+                
+                ProfileView(storeVievModel: storeViewModel)
+                    .tabItem {
+                        Image(systemName: "person.crop.circle")
+                        Text("Profile")
+                    }
+            }
+            .task {
+                await storeViewModel.setCart()
+            }
+        }
     }
 }
 

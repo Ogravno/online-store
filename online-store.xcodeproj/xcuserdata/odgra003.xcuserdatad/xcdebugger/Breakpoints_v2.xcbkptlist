@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A8E4E233-F9EC-4860-8086-96638E4115E8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9AE9E398-13EE-45BD-9308-DC67DE481BF3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "online-store/Classes/StoreViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
+            landmarkName = "getCart(urlString:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9AE9E398-13EE-45BD-9308-DC67DE481BF3 - d503be426365fd13"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for online_store.StoreViewModel.getCart(urlString: Swift.String) async throws -&gt; online_store.Cart"
+                  moduleName = "online-store"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/odgra003/Utvikling/swift/online-store/online-store/Classes/StoreViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "9AE9E398-13EE-45BD-9308-DC67DE481BF3 - d09f2b9caa26b732"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for online_store.StoreViewModel.getCart(urlString: Swift.String) async throws -&gt; online_store.Cart"
+                  moduleName = "online-store"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/odgra003/Utvikling/swift/online-store/online-store/Classes/StoreViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "9AE9E398-13EE-45BD-9308-DC67DE481BF3 - d09f2b9caa26b495"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for online_store.StoreViewModel.getCart(urlString: Swift.String) async throws -&gt; online_store.Cart"
+                  moduleName = "online-store"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/odgra003/Utvikling/swift/online-store/online-store/Classes/StoreViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "9AE9E398-13EE-45BD-9308-DC67DE481BF3 - f25b2d13a43b92d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for online_store.StoreViewModel.getCart(urlString: Swift.String) async throws -&gt; online_store.Cart"
+                  moduleName = "online-store"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/odgra003/Utvikling/swift/online-store/online-store/Classes/StoreViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "224">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
