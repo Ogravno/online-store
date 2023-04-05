@@ -10,8 +10,8 @@ import SwiftUI
 struct LoginView: View {
     @ObservedObject var storeViewModel: StoreViewModel
     
-    @State var username: String = "atuny0"
-    @State var password: String = "9uQFF1Lh"
+    @State var username: String = "" // atuny0
+    @State var password: String = "" // 9uQFF1Lh
     
     
     var body: some View {
@@ -20,9 +20,7 @@ struct LoginView: View {
                 Form {
                     Section {
                         TextField("username", text: $username)
-                        // atuny0
                         SecureField("password", text: $password)
-                        // 9uQFF1Lh
                     }
                     
                     Section {

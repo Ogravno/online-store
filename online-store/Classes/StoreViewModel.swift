@@ -61,6 +61,8 @@ class StoreViewModel: ObservableObject {
             print(url)
             
             user = try await getUserDetails(urlString: url)
+            
+            objectWillChange.send()
         }
         
         catch {
@@ -80,6 +82,8 @@ class StoreViewModel: ObservableObject {
     func setProducts() async {
         do {
             products = try await getProducts(urlString: "https://dummyjson.com/products")
+            
+            objectWillChange.send()
         }
         
         catch {
@@ -99,6 +103,8 @@ class StoreViewModel: ObservableObject {
     func setCart() async {
         do {
             cart = try await getCart(urlString: "https://dummyjson.com/carts/user/" + String(user.id ?? 0))
+            
+            objectWillChange.send()
         }
         
         catch {
@@ -112,6 +118,11 @@ class StoreViewModel: ObservableObject {
         
         let (data, _) = try await URLSession.shared.data(for: urlrequest)
         let svar = try JSONDecoder().decode(CartMeta.self, from: data)
+        
+        if (svar.carts.count < 1) {
+            return Cart(id: 1, products: [])
+        }
+        
         return svar.carts[0]
     }
     
@@ -127,9 +138,5 @@ class StoreViewModel: ObservableObject {
         else {
             cart.products![existingProductIndex!].quantity += 1
         }
-        
-        print(product)
-        print(existingProductIndex)
-        
     }
 }

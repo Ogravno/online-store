@@ -14,8 +14,6 @@ struct CartMeta: Codable {
 struct Cart: Codable {
     var id: Int?
     var products: [CartProduct]?
-    var total: Double?
-    var discountedTotal: Double?
 }
 
 struct CartProduct: Codable, Hashable {
